@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bin's world</title>
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="/main.css">
+    </head>
+
+    <body ng-app="GameApp" ng-controller="GameCtrl">
+
+        <div id="container">
+          <div class="row">
+          <header id="header" class="col-xs-4 col-xs-offset-4">
+            <h1>Bin's World Of Life</h1>
+          </header>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-3" id="sg-container">
+              <div id="ttt" class="col-xs-10 col-xs-offset-1" ng-click="handleEvents()"></div>
+              <div class="row">
+                <button id="clear" class="btn btn-custom col-xs-4" ng-click="clearInput()">Clear Input</button>
+                <button id="clear" class="btn btn-custom col-xs-4" ng-click="startGame()">World Run</button>
+                <button id="leave" class="btn btn-custom col-xs-4" ng-click="stopGame()">World Stop</button>
+              </div>
+            </div>
+            <div id="world" class="col-xs-9">
+              <div id="canvasContainer" class="col-xs-6 col-xs-offset-3">
+                <canvas id='myCanvas' width="500" height="500"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+        <script type="text/javascript" src="/app.js"></script>
+    </body>
+</html>
